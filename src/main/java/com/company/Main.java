@@ -52,7 +52,7 @@ public class Main {
     }
 
     public static void vald(){
-        var nums = new double[3];
+        double[] nums = new double[3];
         for (int i = 0; i < dataArray.length; i++) {
             nums[i] = Math.min(Math.min(dataArray[i][0], dataArray[i][1]),dataArray[i][2]);
         }
@@ -60,7 +60,7 @@ public class Main {
     }
 
     public static void sevidg(){
-        var nums = new double[3];
+        double[] nums = new double[3];
         for (int i = 0; i < dataArray.length; i++) {
             nums[i] = Math.max(Math.max(dataArray[i][0], dataArray[i][1]),dataArray[i][2]);
         }
@@ -68,7 +68,7 @@ public class Main {
     }
 
     public static void laplas(){
-        var nums = new double[3];
+        double[] nums = new double[3];
         double x = 1.0 / dataArray[0].length;
         for (int i = 0; i < dataArray.length; i++) {
             nums[i] = x * (dataArray[i][0] + dataArray[i][1] + dataArray[i][2]);
@@ -78,7 +78,7 @@ public class Main {
     }
 
     public static void gurvits(){
-        var num = new double[3];
+        double[] num = new double[3];
         for (int i = 0; i < dataArray.length; i++) {
             num[i] = coef * Math.max(Math.max(dataArray[i][0], dataArray[i][1]),dataArray[i][2]) + (1 - coef) * Math.min(Math.min(dataArray[i][0], dataArray[i][1]),dataArray[i][2]);
         }
@@ -86,8 +86,8 @@ public class Main {
     }
 
     public static void sevidgh_niggan(){
-        var nums = new double[3];
-        var max = new double[3];
+        double[] nums = new double[3];
+        double[] max = new double[3];
         for (int i = 0; i < dataArray.length; i++) {
             max[i] = Math.max(Math.max(dataArray[0][i], dataArray[1][i]),dataArray[2][i]);
         }
@@ -107,7 +107,7 @@ public class Main {
     }
 
     public static String min(double nums[], int x){
-        var min = Math.min(Math.min(nums[0], nums[1]),nums[2]);
+        double min = Math.min(Math.min(nums[0], nums[1]),nums[2]);
         String text = null;
 
         for(int i = 0;i < nums.length; i++) {
@@ -121,7 +121,7 @@ public class Main {
     }
 
     public static String max(double nums[], int x){
-        var max = Math.max(Math.max(nums[0], nums[1]),nums[2]);;
+        double max = Math.max(Math.max(nums[0], nums[1]),nums[2]);;
         String text = null;
         for(int i = 0;i < nums.length; i++) {
             if(max == nums[i]){
