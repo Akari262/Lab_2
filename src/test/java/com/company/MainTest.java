@@ -8,13 +8,13 @@ class MainTest {
 
     @org.junit.jupiter.api.Test
     void min() {
-        var main = new Main();
+        Main main = new Main();
         assertEquals("70.0!", main.min(nums, 4));
     }
 
     @org.junit.jupiter.api.Test
     void max() {
-        var main = new Main();
+        Main main = new Main();
         assertEquals("81.66666666666666!", main.max(nums, 4));
     }
 }
