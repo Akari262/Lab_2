@@ -9,12 +9,12 @@ class MainTest {
     @org.junit.jupiter.api.Test
     void min() {
         Main main = new Main();
-        assertEquals("81.66666666666666!", main.min(nums, 4));
+        assertEquals(true, main.min(nums, 4));
     }
 
     @org.junit.jupiter.api.Test
     void max() {
         Main main = new Main();
-        assertEquals("70.0!", main.max(nums, 4));
+        assertEquals(false, main.max(nums, 4));
     }
 }
